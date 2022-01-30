@@ -44,7 +44,7 @@
                 <li>{{names[0]}}</li>
                 <li>{{names[1]}}</li>
                 <li>{{names[2]}}</li>
-                <li v-for="chlen in names" key="chlen">{{chlen}}</li>
+                <li v-for="name in names" key="name">{{name}}</li>
             </ul>
             <button @click="addNewItem">Submit</button>
             <hr>
@@ -64,7 +64,7 @@
 
 <script src="https://unpkg.com/vue@next"></script>
 <script>
-    const Zalupa = {
+    const Furi = {
         data () {
             return {
                 created() {
@@ -163,7 +163,7 @@
         }
     }
 
-    Vue.createApp(Zalupa).mount("#app");
+    Vue.createApp(Furi).mount("#app");
     console.log(Vue)
 </script>
 </body>
